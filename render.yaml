@@ -1,0 +1,59 @@
+# Render Blueprint — creates the AI service and the API (both Docker, free plan).
+# Render dashboard → New → Blueprint → select this repo. Values marked `sync: false`
+# are asked for during setup (never commit secrets). The frontend goes to Vercel.
+services:
+  # Python / FastAPI — parsing, embeddings, retrieval, LLM. Only the API calls it
+  # (shared secret header), but on the free plan it has a public URL.
+  - type: web
+    name: manualmind-ai
+    runtime: docker
+    plan: free
+    dockerContext: ./ai-service
+    dockerfilePath: ./ai-service/Dockerfile
+    healthCheckPath: /health
+    envVars:
+      - key: SUPABASE_URL
+        sync: false
+      - key: SUPABASE_SERVICE_ROLE_KEY
+        sync: false
+      - key: GEMINI_API_KEY
+        sync: false
+      - key: AI_SERVICE_SECRET
+        generateValue: true
+      - key: EMBEDDING_PROVIDER
+        value: gemini
+      - key: EMBEDDING_MODEL
+        value: gemini-embedding-001
+      - key: EMBEDDING_TPM
+        value: "30000"
+      - key: LLM_PROVIDER
+        value: gemini
+      - key: LLM_MODEL
+        value: gemini-3.1-flash-lite
+      - key: LLM_FALLBACK_MODELS
+        value: gemini-3.5-flash,gemini-3.8-flash
+
+  # Node / Express — public API: auth, uploads, chat (SSE)
+  - type: web
+    name: manualmind-api
+    runtime: docker
+    plan: free
+    dockerContext: ./backend
+    dockerfilePath: ./backend/Dockerfile
+    healthCheckPath: /api/health
+    envVars:
+      - key: SUPABASE_URL
+        sync: false
+      - key: SUPABASE_SERVICE_ROLE_KEY
+        sync: false
+      - key: AI_SERVICE_SECRET
+        fromService:
+          type: web
+          name: manualmind-ai
+          envVarKey: AI_SERVICE_SECRET
+      # public URL of manualmind-ai, e.g. https://manualmind-ai.onrender.com
+      - key: AI_SERVICE_URL
+        sync: false
+      # your Vercel URL(s), comma-separated, e.g. https://manualmind.vercel.app
+      - key: CORS_ORIGIN
+        sync: false

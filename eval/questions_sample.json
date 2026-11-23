@@ -1,0 +1,114 @@
+[
+ {
+  "question": "What does error code E42 mean?",
+  "language": "en",
+  "expected_document": "Kreiselpumpe_KP-300_Betriebsanleitung.pdf",
+  "expected_page": 4,
+  "expected_answer": "Overpressure in the system, caused by a clogged pressure valve or a closed shut-off valve on the discharge side."
+ },
+ {
+  "question": "How often must the mechanical seal be checked?",
+  "language": "en",
+  "expected_document": "Kreiselpumpe_KP-300_Betriebsanleitung.pdf",
+  "expected_page": 3,
+  "expected_answer": "Every 500 operating hours."
+ },
+ {
+  "question": "What safety equipment do I need for maintenance work?",
+  "language": "en",
+  "expected_document": "Kreiselpumpe_KP-300_Betriebsanleitung.pdf",
+  "expected_page": 1,
+  "expected_answer": "Safety glasses and protective gloves."
+ },
+ {
+  "question": "What is the maximum flow rate of the KP-300 pump?",
+  "language": "en",
+  "expected_document": "Kreiselpumpe_KP-300_Betriebsanleitung.pdf",
+  "expected_page": 2,
+  "expected_answer": "300 l/min."
+ },
+ {
+  "question": "Which grease is used for the bearing and how often?",
+  "language": "en",
+  "expected_document": "Kreiselpumpe_KP-300_Betriebsanleitung.pdf",
+  "expected_page": 3,
+  "expected_answer": "Lithium grease every 2000 operating hours."
+ },
+ {
+  "question": "The motor overheats — what should I do?",
+  "language": "en",
+  "expected_document": "Kreiselpumpe_KP-300_Betriebsanleitung.pdf",
+  "expected_page": 4,
+  "expected_answer": "Error E17: clean the fan and improve ventilation; ambient temperature may be above 40 °C."
+ },
+ {
+  "question": "Was bedeutet der Fehlercode E42?",
+  "language": "de",
+  "expected_document": "Kreiselpumpe_KP-300_Betriebsanleitung.pdf",
+  "expected_page": 4,
+  "expected_answer": "Überdruck im System."
+ },
+ {
+  "question": "Welche Schutzart hat die Pumpe KP-300?",
+  "language": "de",
+  "expected_document": "Kreiselpumpe_KP-300_Betriebsanleitung.pdf",
+  "expected_page": 2,
+  "expected_answer": "IP55."
+ },
+ {
+  "question": "Welche Teilenummer hat der Drucksensor?",
+  "language": "de",
+  "expected_document": "Kreiselpumpe_KP-300_Betriebsanleitung.pdf",
+  "expected_page": 3,
+  "expected_answer": "6ES7 214-1AG40-0XB0."
+ },
+ {
+  "question": "Was ist der maximale Druck der Dosierpumpe DP-50?",
+  "language": "de",
+  "expected_document": "DP-50_Dosing_Pump_Datasheet.pdf",
+  "expected_page": 1,
+  "expected_answer": "10 bar."
+ },
+ {
+  "question": "Was bedeutet Fehler E43 und was muss ich prüfen?",
+  "language": "de",
+  "expected_document": "DP-50_Dosing_Pump_Datasheet.pdf",
+  "expected_page": 3,
+  "expected_answer": "Motorblockade; Motor und Getriebe auf Blockade prüfen."
+ },
+ {
+  "question": "Wie lang darf die Saugleitung der Dosierpumpe maximal sein?",
+  "language": "de",
+  "expected_document": "DP-50_Dosing_Pump_Datasheet.pdf",
+  "expected_page": 2,
+  "expected_answer": "Maximal 2 m."
+ },
+ {
+  "question": "Wie oft muss die Membran der DP-50 gewechselt werden?",
+  "language": "de",
+  "expected_document": "DP-50_Dosing_Pump_Datasheet.pdf",
+  "expected_page": 3,
+  "expected_answer": "Alle 4000 Betriebsstunden."
+ },
+ {
+  "question": "Auf welchen Druck wird das Überdruckventil eingestellt?",
+  "language": "de",
+  "expected_document": "DP-50_Dosing_Pump_Datasheet.pdf",
+  "expected_page": 2,
+  "expected_answer": "12 bar."
+ },
+ {
+  "question": "What does error E41 on the dosing pump mean?",
+  "language": "en",
+  "expected_document": "DP-50_Dosing_Pump_Datasheet.pdf",
+  "expected_page": 3,
+  "expected_answer": "Low flow; check the suction line for air and clean the foot valve."
+ },
+ {
+  "question": "What control signal does the DP-50 accept?",
+  "language": "en",
+  "expected_document": "DP-50_Dosing_Pump_Datasheet.pdf",
+  "expected_page": 1,
+  "expected_answer": "A 4–20 mA input."
+ }
+]

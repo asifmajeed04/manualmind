@@ -1,0 +1,17 @@
+node_modules/
+dist/
+.env
+.env.*
+!.env.example
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+supabase/.temp/
+
+# third-party manuals: download from sources in eval/README.md
+eval/docs/*.pdf
+
+# local tooling
+.claude/
+*.tsbuildinfo

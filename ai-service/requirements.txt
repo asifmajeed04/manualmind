@@ -1,0 +1,9 @@
+fastapi==0.115.6
+uvicorn[standard]==0.34.0
+pydantic-settings==2.7.1
+httpx>=0.28,<1
+pymupdf>=1.25
+langdetect==1.0.9
+tiktoken>=0.8
+openai>=1.60,<3
+google-genai>=1.20

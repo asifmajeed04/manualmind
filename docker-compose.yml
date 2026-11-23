@@ -1,0 +1,23 @@
+# Runs the three app services locally. Database/storage/auth live in Supabase
+# (hosted project, or `npx supabase start` for a local stack).
+services:
+  ai-service:
+    build: ./ai-service
+    env_file: .env
+    ports: ["8000:8000"]
+
+  backend:
+    build: ./backend
+    env_file: .env
+    environment:
+      AI_SERVICE_URL: http://ai-service:8000
+    ports: ["3001:3001"]
+    depends_on: [ai-service]
+
+  frontend:
+    build: ./frontend
+    env_file: .env
+    volumes:
+      - ./.env:/.env:ro   # vite.config.ts reads VITE_* from the parent dir
+    ports: ["5173:5173"]
+    depends_on: [backend]

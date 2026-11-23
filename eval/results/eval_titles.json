@@ -1,0 +1,1777 @@
+[
+ {
+  "question": "What does fault code O-I mean on the MOVITRAC LTE-B?",
+  "language": "en",
+  "doc_language": "de",
+  "identifiers": false,
+  "expected_document": "SEW_MOVITRAC_LTE-B_Betriebsanleitung_DE.pdf",
+  "pages": [
+   57
+  ],
+  "modes": {
+   "vector": {
+    "rank": 1,
+    "top": [
+     "SEW p57",
+     "SEW p57",
+     "SEW p58",
+     "SEW p56",
+     "SEW p58",
+     "SEW p57"
+    ]
+   },
+   "keyword": {
+    "rank": 1,
+    "top": [
+     "SEW p57",
+     "SEW p102",
+     "SEW p80",
+     "SEW p13",
+     "SEW p85",
+     "SEW p25"
+    ]
+   },
+   "hybrid": {
+    "rank": 1,
+    "top": [
+     "SEW p57",
+     "SEW p57",
+     "SEW p58",
+     "SEW p56",
+     "SEW p58",
+     "SEW p57"
+    ]
+   }
+  }
+ },
+ {
+  "question": "Was bedeutet die Fehlermeldung I.t-trP beim MOVITRAC LTE-B?",
+  "language": "de",
+  "doc_language": "de",
+  "identifiers": false,
+  "expected_document": "SEW_MOVITRAC_LTE-B_Betriebsanleitung_DE.pdf",
+  "pages": [
+   57
+  ],
+  "modes": {
+   "vector": {
+    "rank": 1,
+    "top": [
+     "SEW p57",
+     "SEW p56",
+     "SEW p57",
+     "SEW p58",
+     "SEW p57",
+     "SEW p58"
+    ]
+   },
+   "keyword": {
+    "rank": 6,
+    "top": [
+     "SEW p80",
+     "SEW p13",
+     "SEW p85",
+     "SEW p86",
+     "SEW p88",
+     "SEW p57"
+    ]
+   },
+   "hybrid": {
+    "rank": 1,
+    "top": [
+     "SEW p57",
+     "SEW p56",
+     "SEW p57",
+     "SEW p58",
+     "SEW p57",
+     "SEW p58"
+    ]
+   }
+  }
+ },
+ {
+  "question": "The MOVITRAC shows O.Uolt while decelerating. What should I do?",
+  "language": "en",
+  "doc_language": "de",
+  "identifiers": false,
+  "expected_document": "SEW_MOVITRAC_LTE-B_Betriebsanleitung_DE.pdf",
+  "pages": [
+   58
+  ],
+  "modes": {
+   "vector": {
+    "rank": 1,
+    "top": [
+     "SEW p58",
+     "SEW p57",
+     "SEW p56",
+     "SEW p63",
+     "SEW p57",
+     "SEW p56"
+    ]
+   },
+   "keyword": {
+    "rank": 1,
+    "top": [
+     "SEW p58",
+     "SEW p13",
+     "SEW p25",
+     "SEW p80",
+     "SEW p15",
+     "SEW p85"
+    ]
+   },
+   "hybrid": {
+    "rank": 1,
+    "top": [
+     "SEW p58",
+     "SEW p57",
+     "SEW p56",
+     "SEW p63",
+     "SEW p57",
+     "SEW p56"
+    ]
+   }
+  }
+ },
+ {
+  "question": "Below which ambient temperature does the MOVITRAC LTE-B report the U-t fault?",
+  "language": "en",
+  "doc_language": "de",
+  "identifiers": false,
+  "expected_document": "SEW_MOVITRAC_LTE-B_Betriebsanleitung_DE.pdf",
+  "pages": [
+   58
+  ],
+  "modes": {
+   "vector": {
+    "rank": 1,
+    "top": [
+     "SEW p58",
+     "SEW p35",
+     "SEW p15",
+     "SEW p14",
+     "SEW p57",
+     "SEW p76"
+    ]
+   },
+   "keyword": {
+    "rank": 1,
+    "top": [
+     "SEW p58",
+     "SEW p65",
+     "Danfoss p34",
+     "SEW p31",
+     "SEW p103",
+     "SEW p41"
+    ]
+   },
+   "hybrid": {
+    "rank": 1,
+    "top": [
+     "SEW p58",
+     "SEW p35",
+     "SEW p15",
+     "SEW p14",
+     "SEW p57",
+     "SEW p76"
+    ]
+   }
+  }
+ },
+ {
+  "question": "Was bedeutet der Fehler SC-trP und was muss geprüft werden?",
+  "language": "de",
+  "doc_language": "de",
+  "identifiers": false,
+  "expected_document": "SEW_MOVITRAC_LTE-B_Betriebsanleitung_DE.pdf",
+  "pages": [
+   58
+  ],
+  "modes": {
+   "vector": {
+    "rank": 3,
+    "top": [
+     "SEW p57",
+     "SEW p57",
+     "SEW p58",
+     "SEW p58",
+     "SEW p56",
+     "SEW p57"
+    ]
+   },
+   "keyword": {
+    "rank": 1,
+    "top": [
+     "SEW p58",
+     "SEW p57",
+     "SEW p58",
+     "SEW p57",
+     "SEW p54",
+     "SEW p60"
+    ]
+   },
+   "hybrid": {
+    "rank": 3,
+    "top": [
+     "SEW p57",
+     "SEW p57",
+     "SEW p58",
+     "SEW p58",
+     "SEW p56",
+     "SEW p57"
+    ]
+   }
+  }
+ },
+ {
+  "question": "Which parameter shows the last four fault events of the MOVITRAC LTE-B?",
+  "language": "en",
+  "doc_language": "de",
+  "identifiers": false,
+  "expected_document": "SEW_MOVITRAC_LTE-B_Betriebsanleitung_DE.pdf",
+  "pages": [
+   57
+  ],
+  "modes": {
+   "vector": {
+    "rank": 1,
+    "top": [
+     "SEW p57",
+     "SEW p60",
+     "SEW p58",
+     "SEW p78",
+     "SEW p54",
+     "SEW p4"
+    ]
+   },
+   "keyword": {
+    "rank": null,
+    "top": [
+     "SEW p55",
+     "SEW p63",
+     "SEW p53",
+     "SEW p77",
+     "SEW p39",
+     "SEW p41"
+    ]
+   },
+   "hybrid": {
+    "rank": 1,
+    "top": [
+     "SEW p57",
+     "SEW p60",
+     "SEW p58",
+     "SEW p78",
+     "SEW p54",
+     "SEW p4"
+    ]
+   }
+  }
+ },
+ {
+  "question": "How often must a MOVITRAC LTE-B in long-term storage be connected to mains voltage?",
+  "language": "en",
+  "doc_language": "de",
+  "identifiers": false,
+  "expected_document": "SEW_MOVITRAC_LTE-B_Betriebsanleitung_DE.pdf",
+  "pages": [
+   59
+  ],
+  "modes": {
+   "vector": {
+    "rank": 1,
+    "top": [
+     "SEW p59",
+     "SEW p59",
+     "SEW p11",
+     "SEW p73",
+     "SEW p30",
+     "SEW p11"
+    ]
+   },
+   "keyword": {
+    "rank": null,
+    "top": [
+     "SEW p80",
+     "SEW p13",
+     "SEW p85",
+     "SEW p86",
+     "SEW p88",
+     "SEW p87"
+    ]
+   },
+   "hybrid": {
+    "rank": 1,
+    "top": [
+     "SEW p59",
+     "SEW p59",
+     "SEW p11",
+     "SEW p73",
+     "SEW p30",
+     "SEW p11"
+    ]
+   }
+  }
+ },
+ {
+  "question": "Wie wird beim MOVITRAC LTE-B ein Fehler zurückgesetzt?",
+  "language": "de",
+  "doc_language": "de",
+  "identifiers": false,
+  "expected_document": "SEW_MOVITRAC_LTE-B_Betriebsanleitung_DE.pdf",
+  "pages": [
+   38,
+   56
+  ],
+  "modes": {
+   "vector": {
+    "rank": 1,
+    "top": [
+     "SEW p56",
+     "SEW p38",
+     "SEW p57",
+     "SEW p58",
+     "SEW p4",
+     "SEW p4"
+    ]
+   },
+   "keyword": {
+    "rank": null,
+    "top": [
+     "SEW p57",
+     "SEW p58",
+     "SEW p78",
+     "SEW p49",
+     "SEW p69",
+     "SEW p80"
+    ]
+   },
+   "hybrid": {
+    "rank": 1,
+    "top": [
+     "SEW p56",
+     "SEW p38",
+     "SEW p57",
+     "SEW p58",
+     "SEW p4",
+     "SEW p4"
+    ]
+   }
+  }
+ },
+ {
+  "question": "What is the permitted operating ambient temperature of the IP20 MOVITRAC LTE-B?",
+  "language": "en",
+  "doc_language": "de",
+  "identifiers": true,
+  "expected_document": "SEW_MOVITRAC_LTE-B_Betriebsanleitung_DE.pdf",
+  "pages": [
+   79
+  ],
+  "modes": {
+   "vector": {
+    "rank": 2,
+    "top": [
+     "SEW p15",
+     "SEW p79",
+     "SEW p35",
+     "SEW p15",
+     "SEW p79",
+     "SEW p13"
+    ]
+   },
+   "keyword": {
+    "rank": 4,
+    "top": [
+     "Danfoss p35",
+     "SEW p25",
+     "SEW p22",
+     "SEW p79",
+     "SEW p15",
+     "Danfoss p29"
+    ]
+   },
+   "hybrid": {
+    "rank": 2,
+    "top": [
+     "SEW p15",
+     "SEW p79",
+     "SEW p22",
+     "SEW p16",
+     "Danfoss p35",
+     "SEW p25"
+    ]
+   }
+  }
+ },
+ {
+  "question": "Was bedeutet O-hEat?",
+  "language": "de",
+  "doc_language": "de",
+  "identifiers": false,
+  "expected_document": "SEW_MOVITRAC_LTE-B_Betriebsanleitung_DE.pdf",
+  "pages": [
+   58
+  ],
+  "modes": {
+   "vector": {
+    "rank": 1,
+    "top": [
+     "SEW p58",
+     "SEW p57",
+     "SEW p57",
+     "SEW p58",
+     "SEW p54",
+     "SEW p73"
+    ]
+   },
+   "keyword": {
+    "rank": 1,
+    "top": [
+     "SEW p58"
+    ]
+   },
+   "hybrid": {
+    "rank": 1,
+    "top": [
+     "SEW p58",
+     "SEW p57",
+     "SEW p57",
+     "SEW p58",
+     "SEW p54",
+     "SEW p73"
+    ]
+   }
+  }
+ },
+ {
+  "question": "What does error E011 mean on the Wilo-Stratos PICO plus?",
+  "language": "en",
+  "doc_language": "de",
+  "identifiers": true,
+  "expected_document": "Wilo-Stratos_PICO_plus_Betriebsanleitung_DE.pdf",
+  "pages": [
+   23
+  ],
+  "modes": {
+   "vector": {
+    "rank": 1,
+    "top": [
+     "Wilo-Stratos p23",
+     "Wilo-Stratos p23",
+     "Wilo-Stratos p24",
+     "Wilo-Stratos p22",
+     "Wilo-Stratos p22",
+     "Wilo-Stratos p4"
+    ]
+   },
+   "keyword": {
+    "rank": 1,
+    "top": [
+     "Wilo-Stratos p23",
+     "Wilo-Stratos p23"
+    ]
+   },
+   "hybrid": {
+    "rank": 1,
+    "top": [
+     "Wilo-Stratos p23",
+     "Wilo-Stratos p23",
+     "Wilo-Stratos p24",
+     "Wilo-Stratos p22",
+     "Wilo-Stratos p22",
+     "Wilo-Stratos p4"
+    ]
+   }
+  }
+ },
+ {
+  "question": "Was bedeutet die Meldung E038 bei der Stratos PICO plus?",
+  "language": "de",
+  "doc_language": "de",
+  "identifiers": true,
+  "expected_document": "Wilo-Stratos_PICO_plus_Betriebsanleitung_DE.pdf",
+  "pages": [
+   23
+  ],
+  "modes": {
+   "vector": {
+    "rank": 1,
+    "top": [
+     "Wilo-Stratos p23",
+     "Wilo-Stratos p24",
+     "Wilo-Stratos p23",
+     "Wilo-Stratos p22",
+     "Wilo-Stratos p14",
+     "Wilo-Stratos p22"
+    ]
+   },
+   "keyword": {
+    "rank": 1,
+    "top": [
+     "Wilo-Stratos p23"
+    ]
+   },
+   "hybrid": {
+    "rank": 1,
+    "top": [
+     "Wilo-Stratos p23",
+     "Wilo-Stratos p24",
+     "Wilo-Stratos p23",
+     "Wilo-Stratos p22",
+     "Wilo-Stratos p14",
+     "Wilo-Stratos p22"
+    ]
+   }
+  }
+ },
+ {
+  "question": "What is the maximum operating pressure of the Wilo-Stratos PICO plus?",
+  "language": "en",
+  "doc_language": "de",
+  "identifiers": false,
+  "expected_document": "Wilo-Stratos_PICO_plus_Betriebsanleitung_DE.pdf",
+  "pages": [
+   8
+  ],
+  "modes": {
+   "vector": {
+    "rank": 1,
+    "top": [
+     "Wilo-Stratos p8",
+     "Wilo-Stratos p16",
+     "Wilo-Stratos p6",
+     "Wilo-Stratos p7",
+     "Wilo-Stratos p4",
+     "Wilo-Stratos p17"
+    ]
+   },
+   "keyword": {
+    "rank": null,
+    "top": [
+     "Wilo-Stratos p7",
+     "Wilo-Stratos p17",
+     "Wilo-Stratos p25",
+     "Wilo-Stratos p5",
+     "Wilo-Stratos p19",
+     "Wilo-Stratos p13"
+    ]
+   },
+   "hybrid": {
+    "rank": 1,
+    "top": [
+     "Wilo-Stratos p8",
+     "Wilo-Stratos p16",
+     "Wilo-Stratos p6",
+     "Wilo-Stratos p7",
+     "Wilo-Stratos p4",
+     "Wilo-Stratos p17"
+    ]
+   }
+  }
+ },
+ {
+  "question": "What minimum inlet pressure does the Stratos PICO plus need at a medium temperature of 110 °C?",
+  "language": "en",
+  "doc_language": "de",
+  "identifiers": false,
+  "expected_document": "Wilo-Stratos_PICO_plus_Betriebsanleitung_DE.pdf",
+  "pages": [
+   8
+  ],
+  "modes": {
+   "vector": {
+    "rank": 1,
+    "top": [
+     "Wilo-Stratos p8",
+     "Wilo-Stratos p17",
+     "Wilo-Stratos p23",
+     "Wilo-Stratos p18",
+     "Wilo-Stratos p6",
+     "Wilo-Stratos p16"
+    ]
+   },
+   "keyword": {
+    "rank": null,
+    "top": [
+     "Grundfos p15",
+     "Wilo-Stratos p7",
+     "Wilo-Stratos p7",
+     "Grundfos p22",
+     "Wilo-Stratos p17",
+     "Grundfos p10"
+    ]
+   },
+   "hybrid": {
+    "rank": 1,
+    "top": [
+     "Wilo-Stratos p8",
+     "Wilo-Stratos p17",
+     "Wilo-Stratos p23",
+     "Wilo-Stratos p18",
+     "Wilo-Stratos p6",
+     "Wilo-Stratos p16"
+    ]
+   }
+  }
+ },
+ {
+  "question": "Welcher maximale Glykolanteil ist bei der Stratos PICO plus zulässig?",
+  "language": "de",
+  "doc_language": "de",
+  "identifiers": false,
+  "expected_document": "Wilo-Stratos_PICO_plus_Betriebsanleitung_DE.pdf",
+  "pages": [
+   8
+  ],
+  "modes": {
+   "vector": {
+    "rank": 1,
+    "top": [
+     "Wilo-Stratos p8",
+     "Wilo-Stratos p17",
+     "Wilo-Stratos p8",
+     "Wilo-Stratos p4",
+     "Wilo-Stratos p17",
+     "Wilo-Stratos p24"
+    ]
+   },
+   "keyword": {
+    "rank": null,
+    "top": [
+     "Wilo-Stratos p7",
+     "Wilo-Stratos p7",
+     "Wilo-Stratos p25",
+     "Wilo-Stratos p11",
+     "Wilo-Stratos p17",
+     "Wilo-Stratos p19"
+    ]
+   },
+   "hybrid": {
+    "rank": 1,
+    "top": [
+     "Wilo-Stratos p8",
+     "Wilo-Stratos p17",
+     "Wilo-Stratos p8",
+     "Wilo-Stratos p4",
+     "Wilo-Stratos p17",
+     "Wilo-Stratos p24"
+    ]
+   }
+  }
+ },
+ {
+  "question": "The Wilo circulator pump makes noise. What is the likely cause and how do I fix it?",
+  "language": "en",
+  "doc_language": "de",
+  "identifiers": false,
+  "expected_document": "Wilo-Stratos_PICO_plus_Betriebsanleitung_DE.pdf",
+  "pages": [
+   23
+  ],
+  "modes": {
+   "vector": {
+    "rank": 1,
+    "top": [
+     "Wilo-Stratos p23",
+     "Grundfos p31",
+     "Grundfos p31",
+     "Grundfos p32",
+     "Wilo-Stratos p10",
+     "Wilo-Stratos p21"
+    ]
+   },
+   "keyword": {
+    "rank": null,
+    "top": [
+     "Grundfos p31",
+     "Grundfos p32",
+     "Grundfos p29",
+     "Grundfos p12",
+     "Grundfos p12",
+     "Grundfos p20"
+    ]
+   },
+   "hybrid": {
+    "rank": 1,
+    "top": [
+     "Wilo-Stratos p23",
+     "Grundfos p31",
+     "Grundfos p31",
+     "Grundfos p32",
+     "Wilo-Stratos p10",
+     "Wilo-Stratos p21"
+    ]
+   }
+  }
+ },
+ {
+  "question": "What maintenance does the Stratos PICO plus need during operation?",
+  "language": "en",
+  "doc_language": "de",
+  "identifiers": false,
+  "expected_document": "Wilo-Stratos_PICO_plus_Betriebsanleitung_DE.pdf",
+  "pages": [
+   22
+  ],
+  "modes": {
+   "vector": {
+    "rank": 2,
+    "top": [
+     "Wilo-Stratos p4",
+     "Wilo-Stratos p22",
+     "Wilo-Stratos p21",
+     "Wilo-Stratos p22",
+     "Wilo-Stratos p6",
+     "Wilo-Stratos p17"
+    ]
+   },
+   "keyword": {
+    "rank": null,
+    "top": [
+     "Wilo-Stratos p7",
+     "Wilo-Stratos p7",
+     "Wilo-Stratos p17",
+     "Grundfos p23",
+     "Grundfos p5",
+     "Wilo-Stratos p13"
+    ]
+   },
+   "hybrid": {
+    "rank": 2,
+    "top": [
+     "Wilo-Stratos p4",
+     "Wilo-Stratos p22",
+     "Wilo-Stratos p21",
+     "Wilo-Stratos p22",
+     "Wilo-Stratos p6",
+     "Wilo-Stratos p17"
+    ]
+   }
+  }
+ },
+ {
+  "question": "How many radiators can a Stratos PICO plus 0.5-6 m supply at most with the setup assistant?",
+  "language": "en",
+  "doc_language": "de",
+  "identifiers": false,
+  "expected_document": "Wilo-Stratos_PICO_plus_Betriebsanleitung_DE.pdf",
+  "pages": [
+   17
+  ],
+  "modes": {
+   "vector": {
+    "rank": 1,
+    "top": [
+     "Wilo-Stratos p17",
+     "Wilo-Stratos p17",
+     "Wilo-Stratos p16",
+     "Wilo-Stratos p18",
+     "Wilo-Stratos p7",
+     "Wilo-Stratos p11"
+    ]
+   },
+   "keyword": {
+    "rank": 3,
+    "top": [
+     "Wilo-Stratos p7",
+     "Wilo-Stratos p7",
+     "Wilo-Stratos p17",
+     "Wilo-Stratos p13",
+     "Wilo-Stratos p19",
+     "Wilo-Stratos p25"
+    ]
+   },
+   "hybrid": {
+    "rank": 1,
+    "top": [
+     "Wilo-Stratos p17",
+     "Wilo-Stratos p17",
+     "Wilo-Stratos p16",
+     "Wilo-Stratos p18",
+     "Wilo-Stratos p7",
+     "Wilo-Stratos p11"
+    ]
+   }
+  }
+ },
+ {
+  "question": "Das Gebäude wird nicht warm. Welche Regelungsart soll an der Wilo-Pumpe eingestellt werden?",
+  "language": "de",
+  "doc_language": "de",
+  "identifiers": false,
+  "expected_document": "Wilo-Stratos_PICO_plus_Betriebsanleitung_DE.pdf",
+  "pages": [
+   23
+  ],
+  "modes": {
+   "vector": {
+    "rank": 6,
+    "top": [
+     "Wilo-Stratos p18",
+     "Wilo-Stratos p19",
+     "Wilo-Stratos p19",
+     "Wilo-Stratos p16",
+     "Wilo-Stratos p17",
+     "Wilo-Stratos p23"
+    ]
+   },
+   "keyword": {
+    "rank": 1,
+    "top": [
+     "Wilo-Stratos p23",
+     "Wilo-Stratos p18",
+     "Wilo-Stratos p17",
+     "Wilo-Stratos p15",
+     "Wilo-Stratos p13",
+     "Wilo-Stratos p6"
+    ]
+   },
+   "hybrid": {
+    "rank": 6,
+    "top": [
+     "Wilo-Stratos p18",
+     "Wilo-Stratos p19",
+     "Wilo-Stratos p19",
+     "Wilo-Stratos p16",
+     "Wilo-Stratos p17",
+     "Wilo-Stratos p23"
+    ]
+   }
+  }
+ },
+ {
+  "question": "What does E021 mean?",
+  "language": "en",
+  "doc_language": "de",
+  "identifiers": true,
+  "expected_document": "Wilo-Stratos_PICO_plus_Betriebsanleitung_DE.pdf",
+  "pages": [
+   23
+  ],
+  "modes": {
+   "vector": {
+    "rank": 1,
+    "top": [
+     "Wilo-Stratos p23",
+     "Wilo-Stratos p24",
+     "SEW p54",
+     "SEW p58",
+     "SEW p58",
+     "SEW p78"
+    ]
+   },
+   "keyword": {
+    "rank": 2,
+    "top": [
+     "Wilo-Stratos p24",
+     "Wilo-Stratos p23"
+    ]
+   },
+   "hybrid": {
+    "rank": 2,
+    "top": [
+     "Wilo-Stratos p24",
+     "Wilo-Stratos p23",
+     "SEW p54",
+     "SEW p58",
+     "SEW p58",
+     "SEW p78"
+    ]
+   }
+  }
+ },
+ {
+  "question": "Was bedeutet Alarm 13 beim Danfoss VLT Micro Drive FC 51?",
+  "language": "de",
+  "doc_language": "en",
+  "identifiers": false,
+  "expected_document": "Danfoss_VLT_Micro_Drive_FC51_Operating_Guide_EN.pdf",
+  "pages": [
+   25
+  ],
+  "modes": {
+   "vector": {
+    "rank": 1,
+    "top": [
+     "Danfoss p25",
+     "Danfoss p26",
+     "Danfoss p23",
+     "Danfoss p25",
+     "Danfoss p23",
+     "Danfoss p22"
+    ]
+   },
+   "keyword": {
+    "rank": null,
+    "top": [
+     "Danfoss p13",
+     "Danfoss p18",
+     "Danfoss p23",
+     "Danfoss p16",
+     "Danfoss p27",
+     "Danfoss p15"
+    ]
+   },
+   "hybrid": {
+    "rank": 1,
+    "top": [
+     "Danfoss p25",
+     "Danfoss p26",
+     "Danfoss p23",
+     "Danfoss p25",
+     "Danfoss p23",
+     "Danfoss p22"
+    ]
+   }
+  }
+ },
+ {
+  "question": "Was ist die Ursache von Alarm 47 beim FC 51?",
+  "language": "de",
+  "doc_language": "en",
+  "identifiers": false,
+  "expected_document": "Danfoss_VLT_Micro_Drive_FC51_Operating_Guide_EN.pdf",
+  "pages": [
+   25
+  ],
+  "modes": {
+   "vector": {
+    "rank": 1,
+    "top": [
+     "Danfoss p25",
+     "Danfoss p26",
+     "Danfoss p25",
+     "Danfoss p24",
+     "Danfoss p23",
+     "Danfoss p22"
+    ]
+   },
+   "keyword": {
+    "rank": 4,
+    "top": [
+     "Danfoss p18",
+     "Danfoss p24",
+     "Danfoss p23",
+     "Danfoss p25",
+     "Danfoss p13",
+     "Danfoss p16"
+    ]
+   },
+   "hybrid": {
+    "rank": 1,
+    "top": [
+     "Danfoss p25",
+     "Danfoss p26",
+     "Danfoss p25",
+     "Danfoss p24",
+     "Danfoss p23",
+     "Danfoss p22"
+    ]
+   }
+  }
+ },
+ {
+  "question": "What does alarm 4 mean on the VLT Micro Drive?",
+  "language": "en",
+  "doc_language": "en",
+  "identifiers": false,
+  "expected_document": "Danfoss_VLT_Micro_Drive_FC51_Operating_Guide_EN.pdf",
+  "pages": [
+   25
+  ],
+  "modes": {
+   "vector": {
+    "rank": 1,
+    "top": [
+     "Danfoss p25",
+     "Danfoss p26",
+     "Danfoss p21",
+     "Danfoss p25",
+     "Danfoss p22",
+     "Danfoss p4"
+    ]
+   },
+   "keyword": {
+    "rank": null,
+    "top": [
+     "Danfoss p18",
+     "Danfoss p23",
+     "Danfoss p13",
+     "Danfoss p22",
+     "Danfoss p15",
+     "Danfoss p14"
+    ]
+   },
+   "hybrid": {
+    "rank": 1,
+    "top": [
+     "Danfoss p25",
+     "Danfoss p26",
+     "Danfoss p21",
+     "Danfoss p25",
+     "Danfoss p22",
+     "Danfoss p4"
+    ]
+   }
+  }
+ },
+ {
+  "question": "Welche maximale Umgebungstemperatur ist für den Danfoss FC 51 zulässig?",
+  "language": "de",
+  "doc_language": "en",
+  "identifiers": false,
+  "expected_document": "Danfoss_VLT_Micro_Drive_FC51_Operating_Guide_EN.pdf",
+  "pages": [
+   33
+  ],
+  "modes": {
+   "vector": {
+    "rank": 1,
+    "top": [
+     "Danfoss p33",
+     "Danfoss p34",
+     "Danfoss p33",
+     "Danfoss p29",
+     "Danfoss p31",
+     "Danfoss p4"
+    ]
+   },
+   "keyword": {
+    "rank": null,
+    "top": [
+     "Danfoss p16",
+     "Danfoss p18",
+     "Danfoss p13",
+     "Danfoss p22",
+     "Danfoss p30",
+     "Danfoss p27"
+    ]
+   },
+   "hybrid": {
+    "rank": 1,
+    "top": [
+     "Danfoss p33",
+     "Danfoss p34",
+     "Danfoss p33",
+     "Danfoss p29",
+     "Danfoss p31",
+     "Danfoss p4"
+    ]
+   }
+  }
+ },
+ {
+  "question": "In welchem Temperaturbereich darf der FC 51 gelagert und transportiert werden?",
+  "language": "de",
+  "doc_language": "en",
+  "identifiers": false,
+  "expected_document": "Danfoss_VLT_Micro_Drive_FC51_Operating_Guide_EN.pdf",
+  "pages": [
+   33
+  ],
+  "modes": {
+   "vector": {
+    "rank": 1,
+    "top": [
+     "Danfoss p33",
+     "Danfoss p34",
+     "Wilo-Stratos p8",
+     "Danfoss p33",
+     "Danfoss p5",
+     "Danfoss p3"
+    ]
+   },
+   "keyword": {
+    "rank": null,
+    "top": [
+     "Danfoss p13",
+     "Danfoss p18",
+     "Danfoss p16",
+     "Danfoss p22",
+     "Danfoss p29",
+     "Danfoss p24"
+    ]
+   },
+   "hybrid": {
+    "rank": 1,
+    "top": [
+     "Danfoss p33",
+     "Danfoss p34",
+     "Wilo-Stratos p8",
+     "Danfoss p33",
+     "Danfoss p5",
+     "Danfoss p3"
+    ]
+   }
+  }
+ },
+ {
+  "question": "What is the default switching frequency of the FC 51 (parameter 14-01)?",
+  "language": "en",
+  "doc_language": "en",
+  "identifiers": false,
+  "expected_document": "Danfoss_VLT_Micro_Drive_FC51_Operating_Guide_EN.pdf",
+  "pages": [
+   24
+  ],
+  "modes": {
+   "vector": {
+    "rank": 1,
+    "top": [
+     "Danfoss p24",
+     "Danfoss p24",
+     "Danfoss p21",
+     "Danfoss p24",
+     "Danfoss p21",
+     "Danfoss p22"
+    ]
+   },
+   "keyword": {
+    "rank": 1,
+    "top": [
+     "Danfoss p24",
+     "Danfoss p33",
+     "Danfoss p28",
+     "Danfoss p30",
+     "Danfoss p14",
+     "Danfoss p27"
+    ]
+   },
+   "hybrid": {
+    "rank": 1,
+    "top": [
+     "Danfoss p24",
+     "Danfoss p24",
+     "Danfoss p21",
+     "Danfoss p24",
+     "Danfoss p21",
+     "Danfoss p22"
+    ]
+   }
+  }
+ },
+ {
+  "question": "Wie lang ist beim FC 51 die Standardzeit für den automatischen Wiederanlauf (Parameter 14-21)?",
+  "language": "de",
+  "doc_language": "en",
+  "identifiers": false,
+  "expected_document": "Danfoss_VLT_Micro_Drive_FC51_Operating_Guide_EN.pdf",
+  "pages": [
+   24
+  ],
+  "modes": {
+   "vector": {
+    "rank": 1,
+    "top": [
+     "Danfoss p24",
+     "Danfoss p22",
+     "SEW p69",
+     "Danfoss p21",
+     "Danfoss p20",
+     "Danfoss p23"
+    ]
+   },
+   "keyword": {
+    "rank": 4,
+    "top": [
+     "Danfoss p14",
+     "Danfoss p21",
+     "Danfoss p18",
+     "Danfoss p24",
+     "Danfoss p23",
+     "Danfoss p19"
+    ]
+   },
+   "hybrid": {
+    "rank": 1,
+    "top": [
+     "Danfoss p24",
+     "Danfoss p22",
+     "SEW p69",
+     "Danfoss p21",
+     "Danfoss p20",
+     "Danfoss p23"
+    ]
+   }
+  }
+ },
+ {
+  "question": "What does alarm 84 indicate on the Danfoss drive?",
+  "language": "en",
+  "doc_language": "en",
+  "identifiers": false,
+  "expected_document": "Danfoss_VLT_Micro_Drive_FC51_Operating_Guide_EN.pdf",
+  "pages": [
+   26
+  ],
+  "modes": {
+   "vector": {
+    "rank": 1,
+    "top": [
+     "Danfoss p26",
+     "Danfoss p25",
+     "Danfoss p22",
+     "Danfoss p23",
+     "Danfoss p23",
+     "Danfoss p24"
+    ]
+   },
+   "keyword": {
+    "rank": 2,
+    "top": [
+     "Danfoss p18",
+     "Danfoss p26",
+     "Danfoss p24",
+     "Danfoss p23",
+     "Danfoss p5",
+     "Danfoss p22"
+    ]
+   },
+   "hybrid": {
+    "rank": 1,
+    "top": [
+     "Danfoss p26",
+     "Danfoss p25",
+     "Danfoss p22",
+     "Danfoss p23",
+     "Danfoss p23",
+     "Danfoss p24"
+    ]
+   }
+  }
+ },
+ {
+  "question": "Welche Schutzart hat der FC 51 und welches Gehäusekit gibt es?",
+  "language": "de",
+  "doc_language": "en",
+  "identifiers": false,
+  "expected_document": "Danfoss_VLT_Micro_Drive_FC51_Operating_Guide_EN.pdf",
+  "pages": [
+   33
+  ],
+  "modes": {
+   "vector": {
+    "rank": 5,
+    "top": [
+     "Danfoss p35",
+     "Danfoss p29",
+     "Danfoss p30",
+     "Danfoss p3",
+     "Danfoss p33",
+     "Danfoss p5"
+    ]
+   },
+   "keyword": {
+    "rank": null,
+    "top": [
+     "Danfoss p13",
+     "Danfoss p16",
+     "Danfoss p18",
+     "Danfoss p22",
+     "Danfoss p24",
+     "Danfoss p29"
+    ]
+   },
+   "hybrid": {
+    "rank": 5,
+    "top": [
+     "Danfoss p35",
+     "Danfoss p29",
+     "Danfoss p30",
+     "Danfoss p3",
+     "Danfoss p33",
+     "Danfoss p5"
+    ]
+   }
+  }
+ },
+ {
+  "question": "What is the maximum load on the +10 V output (terminal 50) of the FC 51?",
+  "language": "en",
+  "doc_language": "en",
+  "identifiers": false,
+  "expected_document": "Danfoss_VLT_Micro_Drive_FC51_Operating_Guide_EN.pdf",
+  "pages": [
+   33
+  ],
+  "modes": {
+   "vector": {
+    "rank": 1,
+    "top": [
+     "Danfoss p33",
+     "Danfoss p32",
+     "Danfoss p32",
+     "Danfoss p16",
+     "Danfoss p37",
+     "Danfoss p17"
+    ]
+   },
+   "keyword": {
+    "rank": 2,
+    "top": [
+     "Danfoss p32",
+     "Danfoss p33",
+     "Danfoss p34",
+     "Danfoss p31",
+     "Danfoss p31",
+     "Danfoss p15"
+    ]
+   },
+   "hybrid": {
+    "rank": 1,
+    "top": [
+     "Danfoss p33",
+     "Danfoss p32",
+     "Danfoss p32",
+     "Danfoss p16",
+     "Danfoss p37",
+     "Danfoss p17"
+    ]
+   }
+  }
+ },
+ {
+  "question": "Welche Grundfos-CR-Variante ist für Salzwasser geeignet?",
+  "language": "de",
+  "doc_language": "en",
+  "identifiers": false,
+  "expected_document": "Grundfos_CR_CRI_CRN_Installation_Operating_EN.pdf",
+  "pages": [
+   10
+  ],
+  "modes": {
+   "vector": {
+    "rank": 1,
+    "top": [
+     "Grundfos p10",
+     "Grundfos p5",
+     "Grundfos p11",
+     "Grundfos p11",
+     "Grundfos p4",
+     "Grundfos p7"
+    ]
+   },
+   "keyword": {
+    "rank": null,
+    "top": [
+     "SEW p23",
+     "SEW p35",
+     "SEW p80",
+     "SEW p85"
+    ]
+   },
+   "hybrid": {
+    "rank": 1,
+    "top": [
+     "Grundfos p10",
+     "Grundfos p5",
+     "Grundfos p11",
+     "Grundfos p11",
+     "Grundfos p4",
+     "Grundfos p7"
+    ]
+   }
+  }
+ },
+ {
+  "question": "Which CR variant should be used for deionized or demineralized water?",
+  "language": "en",
+  "doc_language": "en",
+  "identifiers": false,
+  "expected_document": "Grundfos_CR_CRI_CRN_Installation_Operating_EN.pdf",
+  "pages": [
+   10
+  ],
+  "modes": {
+   "vector": {
+    "rank": 1,
+    "top": [
+     "Grundfos p10",
+     "Grundfos p11",
+     "Grundfos p8",
+     "Grundfos p11",
+     "Grundfos p7",
+     "Grundfos p5"
+    ]
+   },
+   "keyword": {
+    "rank": 1,
+    "top": [
+     "Grundfos p10",
+     "Grundfos p14",
+     "Grundfos p18",
+     "Grundfos p5",
+     "Grundfos p22",
+     "Grundfos p10"
+    ]
+   },
+   "hybrid": {
+    "rank": 1,
+    "top": [
+     "Grundfos p10",
+     "Grundfos p11",
+     "Grundfos p8",
+     "Grundfos p11",
+     "Grundfos p7",
+     "Grundfos p5"
+    ]
+   }
+  }
+ },
+ {
+  "question": "Wie oft darf ein Grundfos-ML-Motor mit 1/3 bis 5 HP pro Stunde starten?",
+  "language": "de",
+  "doc_language": "en",
+  "identifiers": false,
+  "expected_document": "Grundfos_CR_CRI_CRN_Installation_Operating_EN.pdf",
+  "pages": [
+   22
+  ],
+  "modes": {
+   "vector": {
+    "rank": 1,
+    "top": [
+     "Grundfos p22",
+     "Grundfos p19",
+     "Grundfos p24",
+     "Grundfos p19",
+     "Grundfos p32",
+     "Grundfos p11"
+    ]
+   },
+   "keyword": {
+    "rank": 1,
+    "top": [
+     "Grundfos p22",
+     "Grundfos p19",
+     "Grundfos p5",
+     "Grundfos p25",
+     "Danfoss p20",
+     "Grundfos p6"
+    ]
+   },
+   "hybrid": {
+    "rank": 1,
+    "top": [
+     "Grundfos p22",
+     "Grundfos p19",
+     "Grundfos p24",
+     "Grundfos p19",
+     "Grundfos p32",
+     "Grundfos p11"
+    ]
+   }
+  }
+ },
+ {
+  "question": "Was muss man bei Frostgefahr mit der Grundfos-CR-Pumpe tun?",
+  "language": "de",
+  "doc_language": "en",
+  "identifiers": false,
+  "expected_document": "Grundfos_CR_CRI_CRN_Installation_Operating_EN.pdf",
+  "pages": [
+   22
+  ],
+  "modes": {
+   "vector": {
+    "rank": 1,
+    "top": [
+     "Grundfos p22",
+     "Grundfos p4",
+     "Grundfos p21",
+     "Grundfos p18",
+     "Grundfos p20",
+     "Grundfos p23"
+    ]
+   },
+   "keyword": {
+    "rank": null,
+    "top": []
+   },
+   "hybrid": {
+    "rank": 1,
+    "top": [
+     "Grundfos p22",
+     "Grundfos p4",
+     "Grundfos p21",
+     "Grundfos p18",
+     "Grundfos p20",
+     "Grundfos p23"
+    ]
+   }
+  }
+ },
+ {
+  "question": "Do Grundfos CR motors need to be lubricated at startup?",
+  "language": "en",
+  "doc_language": "en",
+  "identifiers": false,
+  "expected_document": "Grundfos_CR_CRI_CRN_Installation_Operating_EN.pdf",
+  "pages": [
+   24
+  ],
+  "modes": {
+   "vector": {
+    "rank": 1,
+    "top": [
+     "Grundfos p24",
+     "Grundfos p24",
+     "Grundfos p21",
+     "Grundfos p21",
+     "Grundfos p20",
+     "Grundfos p19"
+    ]
+   },
+   "keyword": {
+    "rank": 1,
+    "top": [
+     "Grundfos p24",
+     "Grundfos p21",
+     "Grundfos p19",
+     "Grundfos p28",
+     "Grundfos p19",
+     "Grundfos p21"
+    ]
+   },
+   "hybrid": {
+    "rank": 1,
+    "top": [
+     "Grundfos p24",
+     "Grundfos p24",
+     "Grundfos p21",
+     "Grundfos p21",
+     "Grundfos p20",
+     "Grundfos p19"
+    ]
+   }
+  }
+ },
+ {
+  "question": "Die CR-Pumpe läuft nicht, die Sicherungen sind durchgebrannt. Was ist zu tun?",
+  "language": "de",
+  "doc_language": "en",
+  "identifiers": false,
+  "expected_document": "Grundfos_CR_CRI_CRN_Installation_Operating_EN.pdf",
+  "pages": [
+   31
+  ],
+  "modes": {
+   "vector": {
+    "rank": 1,
+    "top": [
+     "Grundfos p31",
+     "Grundfos p32",
+     "Grundfos p31",
+     "Grundfos p32",
+     "Grundfos p4",
+     "Grundfos p4"
+    ]
+   },
+   "keyword": {
+    "rank": null,
+    "top": [
+     "Wilo-Stratos p15",
+     "Wilo-Stratos p23",
+     "Wilo-Stratos p23",
+     "Wilo-Stratos p13",
+     "Wilo-Stratos p21",
+     "Wilo-Stratos p22"
+    ]
+   },
+   "hybrid": {
+    "rank": 1,
+    "top": [
+     "Grundfos p31",
+     "Grundfos p32",
+     "Grundfos p31",
+     "Grundfos p32",
+     "Grundfos p4",
+     "Grundfos p4"
+    ]
+   }
+  }
+ },
+ {
+  "question": "What should I check if the CR pump shaft does not rotate easily by hand?",
+  "language": "en",
+  "doc_language": "en",
+  "identifiers": false,
+  "expected_document": "Grundfos_CR_CRI_CRN_Installation_Operating_EN.pdf",
+  "pages": [
+   27,
+   31,
+   32
+  ],
+  "modes": {
+   "vector": {
+    "rank": 1,
+    "top": [
+     "Grundfos p31",
+     "Grundfos p27",
+     "Grundfos p26",
+     "Grundfos p25",
+     "Grundfos p6",
+     "Grundfos p6"
+    ]
+   },
+   "keyword": {
+    "rank": 2,
+    "top": [
+     "Grundfos p21",
+     "Grundfos p27",
+     "Grundfos p31",
+     "Grundfos p32",
+     "Grundfos p6",
+     "Grundfos p25"
+    ]
+   },
+   "hybrid": {
+    "rank": 1,
+    "top": [
+     "Grundfos p31",
+     "Grundfos p27",
+     "Grundfos p26",
+     "Grundfos p25",
+     "Grundfos p6",
+     "Grundfos p6"
+    ]
+   }
+  }
+ },
+ {
+  "question": "Welche Ursache kann reduzierte Förderleistung bei der CR-Pumpe haben?",
+  "language": "de",
+  "doc_language": "en",
+  "identifiers": false,
+  "expected_document": "Grundfos_CR_CRI_CRN_Installation_Operating_EN.pdf",
+  "pages": [
+   31,
+   32
+  ],
+  "modes": {
+   "vector": {
+    "rank": 1,
+    "top": [
+     "Grundfos p31",
+     "Grundfos p31",
+     "Grundfos p32",
+     "Grundfos p31",
+     "Grundfos p4",
+     "Grundfos p21"
+    ]
+   },
+   "keyword": {
+    "rank": null,
+    "top": [
+     "Wilo-Stratos p23",
+     "Wilo-Stratos p23",
+     "Wilo-Stratos p18",
+     "SEW p11"
+    ]
+   },
+   "hybrid": {
+    "rank": 1,
+    "top": [
+     "Grundfos p31",
+     "Grundfos p31",
+     "Grundfos p32",
+     "Grundfos p31",
+     "Grundfos p4",
+     "Grundfos p21"
+    ]
+   }
+  }
+ },
+ {
+  "question": "Why must over-greasing of Grundfos motor bearings be avoided?",
+  "language": "en",
+  "doc_language": "en",
+  "identifiers": false,
+  "expected_document": "Grundfos_CR_CRI_CRN_Installation_Operating_EN.pdf",
+  "pages": [
+   24
+  ],
+  "modes": {
+   "vector": {
+    "rank": 1,
+    "top": [
+     "Grundfos p24",
+     "Grundfos p24",
+     "Grundfos p23",
+     "Grundfos p22",
+     "Grundfos p32",
+     "Grundfos p23"
+    ]
+   },
+   "keyword": {
+    "rank": 1,
+    "top": [
+     "Grundfos p24",
+     "Grundfos p5",
+     "Grundfos p24",
+     "Grundfos p6",
+     "Grundfos p18",
+     "Grundfos p12"
+    ]
+   },
+   "hybrid": {
+    "rank": 1,
+    "top": [
+     "Grundfos p24",
+     "Grundfos p24",
+     "Grundfos p23",
+     "Grundfos p22",
+     "Grundfos p32",
+     "Grundfos p23"
+    ]
+   }
+  }
+ },
+ {
+  "question": "What is the maximum number of starts per hour for a 1 1/2 to 20 HP WEG motor on a CR pump?",
+  "language": "en",
+  "doc_language": "en",
+  "identifiers": false,
+  "expected_document": "Grundfos_CR_CRI_CRN_Installation_Operating_EN.pdf",
+  "pages": [
+   22
+  ],
+  "modes": {
+   "vector": {
+    "rank": 1,
+    "top": [
+     "Grundfos p22",
+     "Grundfos p19",
+     "Grundfos p19",
+     "Grundfos p11",
+     "Grundfos p24",
+     "Grundfos p32"
+    ]
+   },
+   "keyword": {
+    "rank": 1,
+    "top": [
+     "Grundfos p22",
+     "Grundfos p7",
+     "Grundfos p25",
+     "Grundfos p19",
+     "Grundfos p16",
+     "Grundfos p27"
+    ]
+   },
+   "hybrid": {
+    "rank": 1,
+    "top": [
+     "Grundfos p22",
+     "Grundfos p19",
+     "Grundfos p19",
+     "Grundfos p11",
+     "Grundfos p24",
+     "Grundfos p32"
+    ]
+   }
+  }
+ }
+]
