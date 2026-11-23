@@ -21,7 +21,9 @@ export function createApp({ store, ai }: Deps) {
     let aiService = "unreachable";
     try {
       const r = await fetch(`${config.aiServiceUrl}/health`, { signal: AbortSignal.timeout(3000) });
-      if (r.ok) aiService = "ok";
+      // must be *our* AI service, not just any server answering 200 (e.g. a mistyped URL)
+      const body = r.ok ? await r.json().catch(() => null) : null;
+      aiService = body?.service === "ai-service" ? "ok" : r.ok ? "wrong-service" : "unreachable";
     } catch {
       /* keep "unreachable" */
     }
