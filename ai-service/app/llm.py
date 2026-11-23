@@ -16,7 +16,7 @@ logger = logging.getLogger(__name__)
 
 TEMPERATURE = 0.2
 MAX_OUTPUT_TOKENS = 1024
-SNIPPET_CHARS = 300
+SNIPPET_CHARS = 420
 
 SYSTEM_PROMPT = """You are an assistant for industrial technical documentation \
 (machine manuals, datasheets, maintenance guides).
@@ -66,7 +66,9 @@ class Citation:
         return self.__dict__.copy()
 
 
-def parse_citations(answer: str, sources: list[SearchResult]) -> tuple[str, list[Citation]]:
+def parse_citations(
+    answer: str, sources: list[SearchResult], question: str | None = None
+) -> tuple[str, list[Citation]]:
     """Returns (cleaned answer, citations actually used, sorted by index).
 
     Markers pointing to non-existent sources (e.g. [9] with 6 sources) are removed.
@@ -83,11 +85,55 @@ def parse_citations(answer: str, sources: list[SearchResult]) -> tuple[str, list
     cleaned = re.sub(r"[ \t]+([.,;:!?])", r"\1", cleaned)  # "text [9]." -> "text."
     cleaned = re.sub(r"[ \t]{2,}", " ", cleaned).strip()
 
-    return cleaned, [make_citation(n, sources[n - 1]) for n in sorted(used)]
+    terms = focus_terms(question)
+    return cleaned, [make_citation(n, sources[n - 1], terms) for n in sorted(used)]
 
 
-def make_citation(index: int, s: SearchResult) -> Citation:
-    snippet = s.content if len(s.content) <= SNIPPET_CHARS else s.content[:SNIPPET_CHARS].rstrip() + "…"
+# part numbers / codes in a question: "O-I", "6ES7", "214-1AG40", "E42", alarm numbers like "13"
+CODE_RE = re.compile(r"[A-Za-z0-9]+(?:[-./][A-Za-z0-9]+)+|\b[A-Z]\d+\b|\b\d{2,}\b")
+
+
+def focus_terms(question: str | None) -> list[str]:
+    """Terms to centre the snippet on: identifiers first (E42, O-I, 6ES7), then the most specific words."""
+    if not question:
+        return []
+    from .retrieval import keyword_terms
+
+    words = keyword_terms(question)
+    codes = re.findall(CODE_RE, question)
+    ordered = [c.lower() for c in codes] + sorted((w for w in words if len(w) > 3), key=len, reverse=True)
+    seen: list[str] = []
+    for t in ordered:
+        if t not in seen:
+            seen.append(t)
+    return seen
+
+
+def make_snippet(content: str, terms: list[str] | None = None, size: int = SNIPPET_CHARS) -> str:
+    """Up to `size` characters of the chunk, centred on the first focus term found (falls back to the start)."""
+    if len(content) <= size:
+        return content
+    low = content.lower()
+    pos = -1
+    for t in terms or []:
+        # whole-token match: "13" must not hit "2013", "o-i" must not hit "radio-isotope"
+        m = re.search(r"(?<![0-9a-zäöüß])" + re.escape(t) + r"(?![0-9a-zäöüß])", low)
+        if m:
+            pos = m.start()
+            break
+    start = 0 if pos < 0 else max(0, pos - size // 3)
+    if start:
+        space = content.rfind(" ", 0, start)
+        start = space + 1 if space > start - 40 else start
+    end = min(len(content), start + size)
+    if end < len(content):
+        space = content.rfind(" ", start, end)
+        end = space if space > end - 40 else end
+    return ("…" if start else "") + content[start:end].strip() + ("…" if end < len(content) else "")
+
+
+def make_citation(index: int, s: SearchResult, terms: list[str] | None = None) -> Citation:
+    snippet = make_snippet(s.content, terms)
     return Citation(index, s.document_id, s.document_name, s.page_number, s.id, snippet)
 
 

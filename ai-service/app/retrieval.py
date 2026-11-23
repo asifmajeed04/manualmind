@@ -85,7 +85,7 @@ STOPWORDS = frozenset(
     those to up was we were what when where which who whom why will with would you your about after before
     any all also each just more most other over same some such only very must may might shall need please
     tell explain describe show give mean means meaning
-    aber alle als also am an auch auf aus bei bin bis bist da damit dann das dass dem den der des die dies
+    aber alle als also am an auch auf aus bei beim bin bis bist da damit dann das dass dem den der des die dies
     diese dieser dieses doch dort du durch ein eine einem einen einer eines er es für gibt hab habe haben hat
     hatte ich ihr im in ist ja kann können könnte man mein mit muss müssen nach nicht noch nur ob oder ohne
     sein seine sich sie sind so soll sollte über um und uns unter vom von vor war waren was welche welcher

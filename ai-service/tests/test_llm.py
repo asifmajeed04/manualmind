@@ -9,7 +9,7 @@ def src(i: int, page: int, content: str = "text", name: str = "Manual.pdf") -> S
     return SearchResult(f"c{i}", f"d{i}", name, page, i, content, 0.9 - i / 100)
 
 
-SOURCES = [src(1, 3, "Fehlercode E42: Überdruck"), src(2, 2, "Wartung alle 500 h"), src(3, 1, "x" * 400)]
+SOURCES = [src(1, 3, "Fehlercode E42: Überdruck"), src(2, 2, "Wartung alle 500 h"), src(3, 1, "x" * 900)]
 
 
 # --- prompt ------------------------------------------------------------------
@@ -41,7 +41,8 @@ def test_parse_citations_without_markers():
 
 def test_long_snippets_are_truncated():
     _, [c] = parse_citations("[3]", SOURCES)
-    assert len(c.snippet) <= 301 and c.snippet.endswith("…")
+    from app.llm import SNIPPET_CHARS
+    assert len(c.snippet) <= SNIPPET_CHARS + 1 and c.snippet.endswith("…")
 
 
 # --- providers ---------------------------------------------------------------
@@ -275,3 +276,37 @@ def test_gemini_switches_to_thinking_level_when_budget_rejected():
         del APIErr.__str__
     assert seen[0][0] == 0 and seen[1][0] is None and seen[2][0] is None
     llm_mod._uses_level.discard("main")
+
+
+# --- citation snippets centred on the question ---------------------------------------
+def test_focus_terms_put_codes_first():
+    from app.llm import focus_terms
+    assert focus_terms("What does fault code O-I mean on the MOVITRAC LTE-B?")[:2] == ["o-i", "lte-b"]
+    assert focus_terms("Was bedeutet Alarm 13 beim Danfoss FC 51?")[0] == "13"
+    assert focus_terms(None) == []
+
+
+def test_snippet_is_centred_on_the_code():
+    from app.llm import make_snippet
+    content = "Intro text about the manual. " * 30 + '"O-I" Überstrom am Umrichterausgang zum Motor. ' + "Other text. " * 40
+    snip = make_snippet(content, ["o-i"], size=200)
+    assert '"O-I" Überstrom' in snip and snip.startswith("…") and snip.endswith("…")
+    assert len(snip) <= 202
+
+
+def test_snippet_number_codes_match_whole_numbers_only():
+    from app.llm import make_snippet
+    content = "Version 2013 released. " + "filler " * 80 + "13 Overcurrent: inverter peak current limit is exceeded. " + "more " * 80
+    assert "13 Overcurrent" in make_snippet(content, ["13"], size=150)
+
+
+def test_snippet_falls_back_to_start_and_short_content_unchanged():
+    from app.llm import make_snippet
+    assert make_snippet("short text", ["x"]) == "short text"
+    assert make_snippet("a" * 50 + " " + "b" * 500, ["zzz"], size=100).startswith("a")
+
+
+def test_parse_citations_uses_question_for_snippets():
+    long = SearchResult("c9", "d9", "M.pdf", 5, 0, "filler words here. " * 40 + "E42 means overpressure. " + "tail " * 50, 0.9)
+    _, [c] = parse_citations("Overpressure [1].", [long], "What does E42 mean?")
+    assert "E42 means overpressure" in c.snippet

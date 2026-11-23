@@ -12,7 +12,7 @@ from collections.abc import Iterator
 
 from .embeddings import Embedder
 from .lang import question_language
-from .llm import LLM, SYSTEM_PROMPT, Citation, build_user_prompt, make_citation, parse_citations
+from .llm import LLM, SYSTEM_PROMPT, Citation, build_user_prompt, focus_terms, make_citation, parse_citations
 from .retrieval import CANDIDATES, Mode, SearchStore, search
 
 TOP_N_CONTEXT = 6  # chunks given to the LLM
@@ -25,9 +25,10 @@ NO_RESULTS = {
 Event = tuple[str, dict]
 
 
-def _source_dicts(results) -> list[dict]:
+def _source_dicts(results, question: str) -> list[dict]:
+    terms = focus_terms(question)
     return [
-        {**make_citation(i, r).to_dict(), "score": r.score, "ranks": r.ranks}
+        {**make_citation(i, r, terms).to_dict(), "score": r.score, "ranks": r.ranks}
         for i, r in enumerate(results, start=1)
     ]
 
@@ -44,7 +45,7 @@ def answer_events(
     mode: Mode = "hybrid",
 ) -> Iterator[Event]:
     results = search(question, user_id, store, embedder, mode=mode, k=k, document_ids=document_ids)[:top_n]
-    yield "sources", {"sources": _source_dicts(results)}
+    yield "sources", {"sources": _source_dicts(results, question)}
 
     if not results:
         msg = NO_RESULTS[question_language(question)]
@@ -57,7 +58,7 @@ def answer_events(
         parts.append(text)
         yield "token", {"text": text}
 
-    answer, citations = parse_citations("".join(parts), results)
+    answer, citations = parse_citations("".join(parts), results, question)
     yield "done", {"answer": answer, "citations": [c.to_dict() for c in citations], "mode": mode}
 
 
