@@ -3,6 +3,9 @@
 Upload PDF machine manuals, datasheets and maintenance guides in **German or English**, ask questions in
 **either language**, and get answers with **page-level citations** you can click and verify.
 
+**Live demo:** [manualmind-two.vercel.app](https://manualmind-two.vercel.app) — frontend on Vercel, API and AI service
+on Render's free plan (the first request after a quiet period can take about a minute while the services wake up).
+
 ![Chat with a cited answer and the source passage](docs/screenshots/chat.png)
 
 | Landing page | Document library | Mobile |
