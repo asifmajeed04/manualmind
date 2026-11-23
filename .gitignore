@@ -15,3 +15,6 @@ eval/docs/*.pdf
 # local tooling
 .claude/
 *.tsbuildinfo
+
+# demo video (large binary, shared outside the repo)
+demo-video/

@@ -161,10 +161,14 @@ def test_gemini_falls_back_when_model_overloaded():
 
 
 def test_gemini_no_fallback_for_client_errors():
+    import app.llm as llm_mod
+    llm_mod._uses_level.discard("main")
     llm, fake = gemini_with({"main": APIErr(400), "fb1": ["x"]}, ["fb1"])
     with pytest.raises(APIErr):
         list(llm.stream("s", "u"))
-    assert fake.calls == ["main"]
+    # one retry on the same model (thinking_level instead of thinking_budget), never another model
+    assert fake.calls == ["main", "main"]
+    llm_mod._uses_level.discard("main")
 
 
 def test_gemini_no_fallback_after_text_started():
@@ -181,7 +185,7 @@ def test_gemini_raises_when_all_models_overloaded():
 
 
 def test_create_llm_fallback_config():
-    assert create_llm("gemini", "", "k", "")._models == ["gemini-3.1-flash-lite", "gemini-3.5-flash", "gemini-3.8-flash"]
+    assert create_llm("gemini", "", "k", "")._models == ["gemini-3.1-flash-lite", "gemini-3.5-flash-lite", "gemini-3.5-flash", "gemini-3.8-flash"]
     assert create_llm("gemini", "m1", "k", "", fallbacks="m2, m1 ,m3")._models == ["m1", "m2", "m3"]
     assert create_llm("gemini", "m1", "k", "", fallbacks="")._models == ["m1"]
 
@@ -244,3 +248,30 @@ def test_question_language_on_labelled_eval_questions():
     assert qs, "eval questions not found"
     wrong = [q["question"] for q in qs if question_language(q["question"]) != q["language"]]
     assert wrong == []
+
+
+def test_gemini_switches_to_thinking_level_when_budget_rejected():
+    import app.llm as llm_mod
+    llm_mod._cooldown_until.clear()
+    llm_mod._uses_level.discard("main")
+    seen = []
+
+    class Models:
+        def generate_content_stream(self, model, contents, config):
+            tc = config.thinking_config
+            seen.append((tc.thinking_budget, tc.thinking_level))
+            if tc.thinking_budget is not None:
+                raise APIErr(400)
+            yield chunk("ok")
+
+    from types import SimpleNamespace
+    llm = GeminiLLM("key", "main", [])
+    llm._client = SimpleNamespace(models=Models())
+    APIErr.__str__ = lambda self: "400 INVALID_ARGUMENT thinking_budget is not supported"
+    try:
+        assert "".join(llm.stream("s", "u")) == "ok"
+        assert "".join(llm.stream("s", "u")) == "ok"  # remembered: no second rejection
+    finally:
+        del APIErr.__str__
+    assert seen[0][0] == 0 and seen[1][0] is None and seen[2][0] is None
+    llm_mod._uses_level.discard("main")

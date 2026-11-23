@@ -127,6 +127,9 @@ def _start_cooldown(model: str, err: Exception) -> None:
     _cooldown_until[model] = time.monotonic() + delay
 
 
+_uses_level: set[str] = set()  # models that reject thinking_budget and need thinking_level
+
+
 def _available(model: str) -> bool:
     return _cooldown_until.get(model, 0.0) <= time.monotonic()
 
@@ -153,20 +156,40 @@ class GeminiLLM:
         self._model = model
         self._models = [model, *[m for m in (fallbacks or []) if m and m != model]]
 
-    def stream(self, system: str, user: str) -> Iterator[str]:
-        config = self._types.GenerateContentConfig(
+    def _config(self, system: str, model: str):
+        # "Thinking" off for speed: older models take thinking_budget=0, some newer ones only
+        # accept thinking_level — learned per model on the first 400 (see _uses_level).
+        thinking = (
+            self._types.ThinkingConfig(thinking_level="minimal")
+            if model in _uses_level
+            else self._types.ThinkingConfig(thinking_budget=0)
+        )
+        return self._types.GenerateContentConfig(
             system_instruction=system,
             temperature=TEMPERATURE,
             max_output_tokens=MAX_OUTPUT_TOKENS,
-            thinking_config=self._types.ThinkingConfig(thinking_budget=0),  # faster, cheaper
+            thinking_config=thinking,
         )
+
+    def _stream_model(self, model: str, system: str, user: str):
+        try:
+            yield from self._client.models.generate_content_stream(model=model, contents=user, config=self._config(system, model))
+        except Exception as e:
+            # the 400 is a generic "invalid argument"; retry once with thinking_level before giving up
+            if getattr(e, "code", None) == 400 and model not in _uses_level:
+                _uses_level.add(model)
+                yield from self._client.models.generate_content_stream(model=model, contents=user, config=self._config(system, model))
+            else:
+                raise
+
+    def stream(self, system: str, user: str) -> Iterator[str]:
         # skip models in cooldown — but if all are cooling down, try them all anyway
         candidates = [m for m in self._models if _available(m)] or self._models
         for i, model in enumerate(candidates):
             usage = None
             started = False
             try:
-                for chunk in self._client.models.generate_content_stream(model=model, contents=user, config=config):
+                for chunk in self._stream_model(model, system, user):
                     if chunk.usage_metadata:
                         usage = chunk.usage_metadata
                     if chunk.text:
@@ -224,7 +247,7 @@ class OpenAILLM:
 
 
 DEFAULT_MODELS = {"gemini": "gemini-3.1-flash-lite", "openai": "gpt-4o-mini"}
-DEFAULT_FALLBACKS = {"gemini": ["gemini-3.5-flash", "gemini-3.8-flash"], "openai": []}
+DEFAULT_FALLBACKS = {"gemini": ["gemini-3.5-flash-lite", "gemini-3.5-flash", "gemini-3.8-flash"], "openai": []}
 
 
 def create_llm(
